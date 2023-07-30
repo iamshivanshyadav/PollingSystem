@@ -34,7 +34,7 @@ module.exports.create = async function (req, res) {
         }
 
 
-        const baseUrl = `http://localhost:3000`
+        const baseUrl = `https://pollingsystem-8vl1.onrender.com`
 
         const option = await Option.create({ 'text': text, 'question_id': question._id });
         option.link_to_vote = `${baseUrl}/api/v1/options/${option.id}/add_vote`;
